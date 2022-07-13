@@ -1,0 +1,66 @@
+.box {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.box-1 {
+    top: 0;
+    left: 0;
+}
+.box-2 {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+}
+ .box-3 {
+    bottom: 0;
+    left: 0;
+ }
+ 
+ .box-4 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+ .box-5 {
+    right: 0;
+    top: 0;
+ }
+ .box-6 {
+    right: 0;  
+    top: 50%;
+    transform: translateY(-50%);
+
+ }
+ .box-7 {
+    bottom: 0;
+    right: 0;
+ }
+
+
+ .child {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: violet;
+ }
+
+ .child-1 {
+    transform: translate(-100%, -100%);
+ }
+ .child-2 {
+    right: 0;
+    transform: translate(100%, -100%);
+ }
+ .child-3 {
+    bottom: 0;
+    transform: translate(-100%, 100%);
+ }
+ .child-4 {
+    right: 0;
+    bottom: 0;
+    transform: translate(100%, 100%);
+ }
