@@ -29,7 +29,11 @@ a:hover {
 }
 
 .content {
+   border-bottom: 1px ridge #000;
    font-size: 0;
+}
+ul {
+   list-style: none;
 }
 article {
    display: inline-block;
@@ -39,20 +43,36 @@ article {
   margin-top: 20px;
   vertical-align: top;
   font-size: 14px;
-  border: 1px solid #000;
 }
 img {
    width: 100px;
    height: 100px;
 }
- 
+ h4 {
+   padding: 10px;
+ }
 section {
    display: inline-block;
    margin-top: 20px;
    width: 60%;
    height: 700px;
-   border: 1px ridge #000;
+   text-align: center;
+   border-right: 1px solid #000;
+   border-left: 1px solid #000;
 }
-ul {
-   list-style: none;
+.Page {
+   margin: 20px 30px 50px 30px;
+}
+span {
+   font-weight: bold;
+   font-size: 40px;
+}
+p{
+   margin-top: 50px;
+   font-size: 16px;
+   text-align: start;
+   
+}
+.footer {
+   text-align: center;
 }
