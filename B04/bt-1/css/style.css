@@ -7,3 +7,39 @@
    max-width: 1200px;
    margin: 0 auto;
 }
+
+.button {
+   position: relative;
+   background-color: cadetblue;
+   width: 300px;
+   height: 300px;
+}
+
+button {
+   position: absolute;
+   padding: 20px 40px;
+   background-color: aqua;
+   border: 1px solid #fff;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   transition: border-radius .5s ;
+   cursor: pointer;
+}
+
+button::after {
+   position: absolute;
+   content: '';
+   background-color: rgb(207, 186, 186);
+   width: 0;
+   height: 100%;
+   top: 0;
+   left: 0;
+   transition: all .3s;
+}
+
+button:hover::after, button:hover {
+   width: 100%;
+   background-color: transparent;
+}
+
