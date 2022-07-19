@@ -13,19 +13,21 @@
    margin: 50px auto;
    width: 700px;
    height: 700px;
-   
+   background-color: rgba(0, 0, 0, .3);
+   overflow: hidden;
 }
 
-img {
+.image > img {
+   display: block;
    width: 100%;
    height: 100%;
    cursor: pointer;
-   overflow: hidden;
-   transition: all .4s;
+   transition: all 1s;
 }
 
-img:hover {
+.image > img:hover {
    transform: scale(1.1);
+   
 }
 
 h2 {
@@ -37,29 +39,19 @@ h2 {
    font-weight: 800;
    text-transform: uppercase;
 }
-.text {
-   
+.image > p {
    position: absolute;
    top: 50%;
-   left: -50%;
-   transition: all ease-in .5s;
-}
-p {
-   padding: 10px 0;
+   left: -100%;
+   transition: all ease-in .6s;
+   padding: 10px;
+   opacity: 0;
    background-color: bisque;
    margin: 10px 0;
 }
 
-p:first-child {
-   transition-delay: .15s;
-}
-p:nth-child(2) {
-   transition-delay: .25s;
-}
-p:last-child {
-   transition-delay: .35s;
-}
 
-img:hover ~ .text {
+.image:hover p {
+   opacity: 1;
    left: 10%;
 }
