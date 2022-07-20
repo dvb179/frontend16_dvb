@@ -19,7 +19,7 @@ header {
 
 .content {
    color: white;
-   margin-right: 100px;
+   width: 80%;
 }
 
 h2 {
@@ -42,7 +42,7 @@ button {
 
 button:hover {
    cursor: pointer;
-   background-color: rgba(255, 255, 255, 0.8);
+   background-color: rgba(255, 255, 255, 0.8);`
 }
 
 i {
@@ -75,4 +75,8 @@ i:hover {
 
 .cricle:nth-child(2) {
    background-color: bisque;
+} 
+.cricle:hover {
+   background-color: bisque;
+   cursor: pointer;
 }
