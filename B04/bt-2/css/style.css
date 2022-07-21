@@ -13,7 +13,7 @@
    margin: 50px auto;
    width: 700px;
    height: 700px;
-   background-color: rgba(0, 0, 0, .3);
+   background-color: rgba(0, 0, 0, 0.3);
    overflow: hidden;
 }
 
@@ -27,7 +27,6 @@
 
 .image > img:hover {
    transform: scale(1.1);
-   
 }
 
 h2 {
@@ -43,13 +42,12 @@ h2 {
    position: absolute;
    top: 50%;
    left: -100%;
-   transition: all ease-in .6s;
+   transition: all ease-in 0.6s;
    padding: 10px;
    opacity: 0;
    background-color: bisque;
    margin: 10px 0;
 }
-
 
 .image:hover p {
    opacity: 1;
