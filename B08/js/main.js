@@ -40,9 +40,14 @@ const findMaxArray = (NumberList) => {
     // }
     // console.log(findMaxArray([23, 43, '6']));
 
+    let max = NumberList[0];
+    NumberList.forEach((numbers) => {
+        if (numbers > max) {
+            max = numbers
+        }
+    });
+    return max;
 
-
-
-    return NumberList.reduce((max, numbers) => numbers > max ? numbers : max);
+    // return NumberList.reduce((max, numbers) => numbers > max ? numbers : max);
 }
-console.log(findMaxArray([23, '43']));
+console.log(findMaxArray([23, 99, 88]));
