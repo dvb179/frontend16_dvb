@@ -17,7 +17,7 @@ for (let j = 0; j < ELEMENT_BOX.length; j++) {
     j % 2 === 0 ? ELEMENT_BOX[j].style.backgroundColor = 'red' : ELEMENT_BOX[j].style.backgroundColor = 'green'
 
 
-
+    
 }
 
 /* let color = ELEMENT_BOX[j].style.backgroundColor */
