@@ -1,8 +1,14 @@
+// toggle addTask
 const addTask = (open = true) => {
     if (open) {
-        TAG_FORM.removeAttribute('hidden')
+        ELENMENT_INPUT.removeAttribute('hidden')
+        ELENMENT_BUTTON.style.backgroundColor = 'red'
     } else {
-        TAG_FORM.setAttribute('hidden', true)
+        ELENMENT_INPUT.setAttribute('hidden', true)
+        ELENMENT_BUTTON.style.backgroundColor = '#46b8da'
     }
-    
+
 }
+
+// addTask
+console.log(ELENMENT_INPUT_NAME.value);
