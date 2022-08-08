@@ -7,9 +7,13 @@ ELENMENT_BUTTON.addEventListener('click', () => {
 
 // handle click addTask button
 ELENMENT_INPUT_SUBMIT.addEventListener('click', () => {
-    
-    arrList.push(`id:${ramdomNumber}`)
-    arrList.push(`name:${ELENMENT_INPUT_NAME.value}`)
-    arrList.push(`level:${ELENMENT_INPUT_LEVEL.value}`)
-    console.log(arrList);
+
+// set id to arr
+    let ramdomID = String(Date.now())
+// set name to arr
+    let nameList = ELENMENT_INPUT_NAME.value
+
+    addItemToDOM(ramdomID, nameList)
+    addItemToArr(ramdomID, nameList)
+    ELENMENT_INPUT_NAME.value = ''
 });

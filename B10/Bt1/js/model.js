@@ -9,6 +9,21 @@ const addTask = (open = true) => {
     }
 
 }
-
 // addTask
-console.log(ELENMENT_INPUT_NAME.value);
+const addItemToDOM = (ramdomID, nameList) => {
+    const tr = document.querySelector('tr')
+    const td = document.createElement('td')
+    td.setAttribute('data-id', ramdomID)
+    td.innerText = nameList
+    tr.appendChild(td)
+
+
+}
+
+
+
+const addItemToArr = (ramdomID, nameList) => {
+    arrList.push({ ramdomID, nameList })
+    console.log(arrList);
+}
+console.log(addItemToDOM());
