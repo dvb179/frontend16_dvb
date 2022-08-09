@@ -15,5 +15,6 @@ ELENMENT_INPUT_SUBMIT.addEventListener('click', () => {
 
     addItemToDOM(ramdomID, nameList)
     addItemToArr(ramdomID, nameList)
-    ELENMENT_INPUT_NAME.value = ''
+    ELENMENT_INPUT_NAME.value = '';
+
 });

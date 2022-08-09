@@ -11,11 +11,13 @@ const addTask = (open = true) => {
 }
 // addTask
 const addItemToDOM = (ramdomID, nameList) => {
-    const tr = document.querySelector('tr')
+    const tbody = document.querySelector('tbody')
+    const tr = document.createElement('tr')
     const td = document.createElement('td')
-    td.setAttribute('data-id', ramdomID)
+    tbody.setAttribute('data-id', ramdomID)
+    tr.innerText = nameList
     td.innerText = nameList
-    tr.appendChild(td)
+    tbody.appendChild(tr)
 
 
 }
