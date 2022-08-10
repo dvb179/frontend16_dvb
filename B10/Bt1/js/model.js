@@ -11,21 +11,24 @@ const addTask = (open = true) => {
 }
 // Show Data
 const ShowData = () => {
-    let xhtml= '';
-    arrList.forEach((item , index) => {
+    let xhtml = '';
+    arrList.forEach((item, index) => {
         let id = item.id
-        xhtml += `<tr>
-            <td class="text-center">${index + 1}</td>
-            <td>${item.name}</td>
-            <td class="text-center"><span class="label label-danger">High</span></td>
-            <td>
-                <button type="button" class="btn btn-warning">Edit</button>
-                <button type="button" class="btn btn-danger" onclick="deleteItem('${id}')">Delete</button>
-            </td>
-        </tr>`
+        xhtml +=
+            `<tr>
+				<td class="text-center">${index + 1}</td>
+				<td>${item.name}</td>
+				<td class="text-center"><span class="label label-info">Medium</span></td>
+					<td>
+					    <button type="button" class="btn btn-warning">Edit</button>
+					    <button type="button" class="btn btn-danger onclick="deleteItem('${id}')">Delete</button>
+					</td>
+			</tr>`
     })
+
     ELEMENT_CONTENT.innerHTML = xhtml
 }
+
 
 // delete
 const deleteItem = (id) => {
@@ -37,15 +40,15 @@ const deleteItem = (id) => {
 
 
 //  create ID 
-const makeid = (length) =>  {
-    var result           = '';
-    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+const makeid = (length) => {
+    var result = '';
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     var charactersLength = characters.length;
-    for ( var i = 0; i < length; i++ ) {
-      result += characters.charAt(Math.floor(Math.random() * 
- charactersLength));
-   }
-   return result;
+    for (var i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() *
+            charactersLength));
+    }
+    return result;
 }
 
 
