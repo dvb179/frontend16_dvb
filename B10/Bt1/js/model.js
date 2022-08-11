@@ -4,7 +4,7 @@ const addTask = (open = true) => {
         ELENMENT_INPUT.removeAttribute('hidden')
         ELENMENT_BUTTON.style.backgroundColor = 'red'
     } else {
-        ELENMENT_INPUT.setAttribute('hidden', true)
+        ELENMENT_INPUT.setAttribute('hidden')
         ELENMENT_BUTTON.style.backgroundColor = '#46b8da'
     }
 
@@ -20,7 +20,7 @@ const ShowData = () => {
 				<td>${item.name}</td>
 				<td class="text-center"><span class="label label-info">Medium</span></td>
 					<td>
-					    <button type="button" class="btn btn-warning">Edit</button>
+					    <button type="button" class="btn btn-warning" onclick="showEditInform('${id}')">Edit</button>
 					    <button type="button" class="btn btn-danger onclick="deleteItem('${id}')">Delete</button>
 					</td>
 			</tr>`
@@ -30,12 +30,25 @@ const ShowData = () => {
 }
 
 
-// delete
-const deleteItem = (id) => {
-    console.log(id);
+// showEditInform
+const showEditInform = (id) => {
+    let item = getItemById(id)
+    addTask(true)
+    showItemForm(item)
+    console.log(item);
 }
 
-// add array
+
+const showItemForm = (item) => {
+    ELENMENT_INPUT_NAME.value = item.name
+    ELENMENT_INPUT_ID.value = item.id
+}
+
+
+// getItemId
+const getItemById = (id) => {
+    return arrList.find(item => item.id == id);
+}
 
 
 
@@ -50,5 +63,4 @@ const makeid = (length) => {
     }
     return result;
 }
-
 

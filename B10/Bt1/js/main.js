@@ -8,16 +8,19 @@ ELENMENT_BUTTON.addEventListener('click', () => {
 
 
 ELENMENT_INPUT_SUBMIT.addEventListener('click', function () {
-    let id = makeid(15)
+    // let id = makeid(15)
     let name = ELENMENT_INPUT_NAME.value
     let level = ELENMENT_INPUT_LEVEL.value
 
-    if (name == '') return -1
+    
 
-    arrList.push({ 'id': id, 'name': name, 'level': level })
+    let id = ELENMENT_INPUT_ID.value
+    console.log(id);
 
-    console.log(arrList);
+    // arrList.push({ id, name, level })
+
+    
     ShowData()
-    ELENMENT_INPUT_NAME.value = ''
-    ELENMENT_INPUT.setAttribute('hidden', true)
+    // ELENMENT_INPUT_NAME.value = ''
+    // ELENMENT_INPUT.setAttribute('hidden', true)
 })
