@@ -16,9 +16,8 @@ ELENMENT_INPUT_SUBMIT.addEventListener('click', function () {
 
     let id = ELENMENT_INPUT_ID.value
     console.log(id);
-
     // arrList.push({ id, name, level })
-
+ 
     
     ShowData()
     // ELENMENT_INPUT_NAME.value = ''
