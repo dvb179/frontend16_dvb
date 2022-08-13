@@ -89,6 +89,8 @@ const resetForm = () => {
 // SET LOCAL
  const setItemLocal = () => {
     localStorage.setItem("keyItem", JSON.stringify(arrData))
+
+    
  }
 
 //  get local
