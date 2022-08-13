@@ -53,7 +53,7 @@ const deleteItem = (id) => {
         showData()
     }
 }
-// edit
+// show
 
 const ShowformEditItem = (id) => {
 
@@ -68,10 +68,36 @@ const ShowformEditItem = (id) => {
 
 
 
+// edit 
+const editItem =() => {
+    arrData = arrData.map(i => {
+        
+        return i.id == item.id ? item : i 
+    })
+    showData()
+}
+
+// reset
+
+const resetForm = () => {
+    ELEMENT_FORM_INPUT_NAME.value = ""
+    ELEMENT_FORM_INPUT_LEVEL.value = "small"
+    ELEMENT_FORM_INPUT_HIDEEN.value = ""
+}
 
 
+// SET LOCAL
+ const setItemLocal = () => {
+    localStorage.setItem("keyItem", JSON.stringify(arrData))
+ }
 
+//  get local
 
- 
+ const getLocalItem = () => {
+    let items = JSON.parse(localStorage.getItem('keyItem'))
+    items = items ? items : []
+
+    return items
+ }
 
 

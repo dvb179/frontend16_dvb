@@ -11,17 +11,10 @@ ELEMENT_FORM_SUBMIT_BUTTON.addEventListener('click' , function () {
 
     if(name === '') return -1
     
-    if(!name) {
-        
-        addItem(item)
-    }else {
-        console.log(123);
-    }
-
-
-
+   
+    !ELEMENT_INPUT_HIDDEN.value ? addItem(item) : editItem(item)
+    
     showData()
     handleToggleForm(false)
 })
 
-showData()
