@@ -6,13 +6,20 @@ ELEMENT_FORM_BUTTON.addEventListener('click', function () {
 ELEMENT_FORM_SUBMIT_BUTTON.addEventListener('click' , function () {
     let name    = ELEMENT_FORM_INPUT_NAME.value
     let level   = ELEMENT_FORM_INPUT_LEVEL.value
-    if(id == '') {
-        let id      = gitmakeid(20)
-        add
+    let id = ELEMENT_INPUT_HIDDEN.value ? ELEMENT_INPUT_HIDDEN.value: makeid(20)
+    let item = {id, name, level}
+
+    if(name === '') return -1
+    
+    if(!name) {
+        
+        addItem(item)
     }else {
-        edit
+        console.log(123);
     }
-    arrData.push({id,name,level})
+
+
+
     showData()
     handleToggleForm(false)
 })

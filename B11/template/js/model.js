@@ -20,15 +20,13 @@ const showData = () => {
             <td class="text-center"><span class="label label-danger">High</span></td>
             <td>
                 
-                <button type="button" class="btn btn-warning">Edit</button>
+                <button type="button" class="btn btn-warning" onclick="ShowformEditItem('${id}')">Edit</button>
                 <button type="button" class="btn btn-danger" onclick="deleteItem('${id}')" >Delete</button>
             </td>
         </tr>`
     })
     ELEMENT_CONTENT.innerHTML = xhtml
 }
-// Delete
-const deleteItem = (id) => {}
 
 // Create Id
 const makeid = (length) =>  {
@@ -42,10 +40,31 @@ const makeid = (length) =>  {
 }
 
 // add
+const addItem = (item) => {
+    arrData.push(item)
+}
 
+// Delete
+const deleteItem = (id) => {
+    if (confirm ('ban chac chu')) {
+
+        arrData = arrData.filter(item => item.id != id)
+        console.log(arrData);
+        showData()
+    }
+}
 // edit
 
+const ShowformEditItem = (id) => {
 
+    let item = arrData.find(item => item.id ==id)
+    ELEMENT_FORM_INPUT_NAME.value = item.name 
+    ELEMENT_FORM_INPUT_LEVEL.value = item.level
+    console.log(item);
+
+
+    handleToggleForm()
+}
 
 
 
