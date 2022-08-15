@@ -29,7 +29,6 @@ const ShowData = () => {
     ELEMENT_CONTENT.innerHTML = xhtml
 }
 
-
 // showEditInform
 const showEditInform = (id) => {
     let item = getItemById(id)
@@ -38,12 +37,16 @@ const showEditInform = (id) => {
     console.log(item);
 }
 
-
+// showItemForm
 const showItemForm = (item) => {
     ELENMENT_INPUT_NAME.value = item.name
     ELENMENT_INPUT_ID.value = item.id
 }
 
+// deleteItem
+const deleteItem = (id) => {
+
+}
 
 // getItemId
 const getItemById = (id) => {
