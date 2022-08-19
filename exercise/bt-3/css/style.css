@@ -23,13 +23,17 @@
 
 .box-element_list {
    display: flex;
+   gap: 32px;
+   padding: 16px 0;
+   justify-content: center;
    flex-wrap: wrap;
    width: 60%;
    border: 1px solid #000;
 }
 
 .box-element_numbers {
-   margin: 16px;
+   max-width: 32px;
+   max-height: 32px;
    padding: 50px;
    border-radius: 12px;
    background-color: aqua;
@@ -101,7 +105,6 @@
 .box-btn {
    display: flex;
    justify-content: space-around;
-   border: 1px solid salmon;
    margin: 12px;
 }
 
