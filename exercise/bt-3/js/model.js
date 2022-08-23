@@ -6,3 +6,4 @@ function getRandomInt(min, max) {
 }
 // hide 
 $(".box-element_turn").hide();
+
