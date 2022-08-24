@@ -6,11 +6,9 @@ $('.box-element_numbers').click(function (e ) {
    let numberSecrets = parseInt($('#box-element_nub-secrets').text());
    console.log(values);
    let n = 0;
-   if (values = numberSecrets) {
-      $(".box-element_turn").append(
-         "<span id='box-element_result'></span>" +
-         "<p class='box-element-content'>1. Lần  số của bạn nhỏ hơn số bí mật</p>")
-      
+   if (values < numberSecrets) {
+      $("#box-element_result").html('sai rồi');
+      $(".box-element-content").text("Lần 1. " + values + " - số của bạn lớn hơn sô bí mật");
    } else if (values > numberSecrets) {
       $("#box-element_result").html('sai rồi');
       $(".box-element-content").text("Lần 1. " + values + " - số của bạn lớn hơn sô bí mật");
