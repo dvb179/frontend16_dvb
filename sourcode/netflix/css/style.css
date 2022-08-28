@@ -173,7 +173,7 @@ footer {
       grid-gap: 20px;
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas:
-         "nt nt nt  .  .  . sb . . . "
+         "nt gitnt nt  .  .  . sb . . . "
          "mn mn mn mn mn mn  mn mn mn mn";
    }
 
