@@ -5,10 +5,9 @@ $('.box-element_numbers').click(function (e ) {
    let values = parseInt($(this).html(getRandomInt(1, 25)).text())
    let numberSecrets = parseInt($('#box-element_nub-secrets').text());
    console.log(values);
-   let n = 0;
-   if (values = numberSecrets) {
+   if (values < numberSecrets) {
       $(".box-element_turn").append(
-         "<span id='box-element_result'></span>" +
+         "<span id='box-element_result'>sai rồi</span>" +
          "<p class='box-element-content'>1. Lần  số của bạn nhỏ hơn số bí mật</p>")
       
    } else if (values > numberSecrets) {
