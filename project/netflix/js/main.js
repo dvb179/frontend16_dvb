@@ -1,12 +1,17 @@
-const stu = [
-    {id: 1, name: 'test', scholl: 'NVC'},
-    {id: 2, name: 'test 2', scholl: 'NVC 2'}
-]
+// Expected results:
+var arr = [
+  ['name', 'binh dang'],
+  ['age', 18],
+];
 
-const numbers = [1,2, 3, 4, 5, 6, 7, 8, 9, 10];
+const arrToObj = (arr) => {
+  const array = arr.reduce((obj, item) => {
+    obj[item[0]] = item[1]
+    return obj
+  },{})
+  return array
+}
 
 
-const sum = numbers.reduce((number, curr) =>{
-  return number + curr
-}, 0);
-console.log(sum);
+
+console.log(arrToObj(arr)); 
