@@ -1,18 +1,13 @@
-// Expected results:
-var arr = [
-  ['name', 'binh dang'],
-  ['age', 18],
-];
-
-const arrToObj = (arr) => {
-  const array = arr.reduce((obj, item) => {
-    obj[item[0]] = item[1]
-
-    return obj
-  },{})
-  return array
-}
+BTN_NEXT.addEventListener('click', e => {
+    handleChangeSlider(1)
+    setTimeout(() => {
+        
+    },300)
+    console.log(SLIDER_ITEM_WIDTH);
+});
 
 
-
-console.log(arrToObj(arr)); 
+BTN_PREV.addEventListener('click', e => {
+    handleChangeSlider(-1)
+    console.log();
+});
