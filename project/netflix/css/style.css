@@ -176,7 +176,7 @@ header {
 .slider-main {
    display: flex;
    position: relative;
-   transition: transform 0.2s ease-in;
+   transition: transform .5s ease-in-out;
    height: 100%;
 }
 .slider-item {
@@ -191,6 +191,12 @@ header {
    height: 100%;
    object-fit: cover;
    border-radius: 10px;
+}
+
+
+.slider-info {
+   position: absolute;
+   z-index: 1000;
 }
 /* MAIN CONTIANER */
 .main-container {
