@@ -1,7 +1,7 @@
 // CLICK BTN
 BTN_NEXT.addEventListener('click', () => {
-    handleChangeSlider(1)
     setTimeout(() => {
+        handleChangeSlider(1)
 
     }, 300)
 });

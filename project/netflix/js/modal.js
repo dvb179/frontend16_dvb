@@ -4,7 +4,7 @@ const handleChangeSlider = (dir) => {
         console.log(counter);
         if (counter >= SLIDER_ITEM_LENGTH - 1) {
             
-            positionX = SLIDER_ITEM_LENGTH - 1
+            positionX = SLIDER_ITEM_LENGTH
             counter = -1;
         }
         positionX = positionX - SLIDER_ITEM_WIDTH;
