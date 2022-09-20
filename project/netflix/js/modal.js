@@ -24,23 +24,26 @@ const handleChangeSlider = (dir) => {
         counter--;
         
     }
-    $('.slider-dot-item.active').classList.remove('active');
+    S('.slider-dot-item.active').classList.remove('active');
     SLIDES_DOT[counter].classList.add('active');
 }
 
 // auto scroll
-// setInterval(() =>{
-//     counter++;
-//     if (counter >= SLIDER_ITEM_LENGTH) {
-//         positionX = SLIDER_ITEM_WIDTH
-//         counter = 0
-//     }
-//     console.log(counter);
-//     positionX = positionX - SLIDER_ITEM_WIDTH;
-//     SLIDER_MAIN.style = `transform: translateX(${positionX}px)`
+setInterval(() =>{
+    counter++;
+    if (counter >= SLIDER_ITEM_LENGTH) {
+        positionX = SLIDER_ITEM_WIDTH
+        counter = 0
+    }
+    console.log(counter);
+    positionX = positionX - SLIDER_ITEM_WIDTH;
+    SLIDER_MAIN.style = `transform: translateX(${positionX}px)`
     
-//     $('.slider-dot-item.active').classList.remove('active');
-//     SLIDES_DOT[counter].classList.add('active');
+   S('.slider-dot-item.active').classList.remove('active');
+    SLIDES_DOT[counter].classList.add('active');
 
-// },5000);
+},5000);
 
+document.querySelector('body').onscroll = () => {
+    console.log(HEADER);
+}
