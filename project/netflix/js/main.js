@@ -13,7 +13,7 @@ BTN_PREV.addEventListener('click', () => {
 
 // CLICK DOT
 SLIDES_DOT.forEach(item => item.addEventListener('click', (e) => {
-    s('.slider-dot-item.active').classList.remove('active');
+    S('.slider-dot-item.active').classList.remove('active');
     item.classList.add('active')
 
     const slideIndex = parseInt(e.target.dataset.index);
