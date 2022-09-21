@@ -42,7 +42,7 @@ setInterval(() =>{
    S('.slider-dot-item.active').classList.remove('active');
     SLIDES_DOT[counter].classList.add('active');
 
-},5000);
+},7000);
 
 document.querySelector('body').onscroll = () => {
     console.log(HEADER);
